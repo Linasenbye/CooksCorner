@@ -56,7 +56,7 @@ const RegistrationForm = () => {
     <div className={styles.container}>
      <header className={styles.header_login}>
         <div className={styles.header_name}>
-            <h1 className={styles.header_title}>Welcome Back To <span className={styles.title_span}>CooksCorner</span></h1>
+            <h1 className={styles.header_title}>Sign up for delicious <span className={styles.title_span}>Discoveries!</span></h1>
         </div>
     </header>
       <form onSubmit={handleSubmit} autoComplete="off" className={styles.form_wrapper}>

@@ -11,12 +11,13 @@ html, body {
     width: 100%;
     height: 300px;
     background-color: #FA9E31;
-    display: flex; /* Add this */
-    justify-content: center; /* Add this */
-    align-items: center; /* Add this */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 .header_name {
-    width: 324px;
+    width: 431px;
+    text-align: center;
     height: 120px;
 }
 .header_title {
@@ -26,7 +27,10 @@ html, body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
 }
+.title_span {
+    font-weight: 500;
 
+}
 
 .container{
     width: 100%;
@@ -40,7 +44,7 @@ html, body {
 
 .form_wrapper{
     width: 100%;
-    height: calc(100vh - 300px);/* Set height to 100% of viewport height */
+    height: calc(100vh - 300px);
     display: flex;
     flex-direction: column;
     align-items: center;
