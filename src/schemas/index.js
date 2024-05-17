@@ -5,25 +5,25 @@ const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 
 
 export const signupValidationSchema = yup.object().shape({
-    email: yup.string().email("Please enter a valid email").required("Обязательное поле"),
+    email: yup.string().email("Please enter a valid email").required("Please fill in the field!"),
     username: yup
         .string()
-        .matches(USER_REGEX, {message: "такой логин уже существует"})
-        .required("Обязательное поле"),
+        .matches(USER_REGEX, {message: "This login exist"})
+        .required("Please fill in the field!"),
     password: yup
         .string()
-        .required("Обязательное поле")
-        .min(8, 'От 8 до 15 символов')
-        .max(15, 'От 8 до 15 символов')
-        .matches(/[a-z]+/, 'Строчные и прописные буквы')
-        .matches(/[A-Z]+/, 'Строчные и прописные буквы')
-        .matches(/\d+/, 'Минимум 1 цифра')
-        .matches(/[@$!%*#?&]+/, 'Минимум 1 спецсимвол (!, ", #, $...)'),
+        .required("Please fill in the field!")
+        .min(8, 'From 8 to 15 symbols')
+        .max(15, 'From 8 to 15 symbols')
+        .matches(/[a-z]+/, 'Include Capital and Small letter')
+        .matches(/[A-Z]+/, 'Include Capital and Small letter')
+        .matches(/\d+/, 'Minimum 1 letter')
+        .matches(/[@$!%*#?&]+/, 'Minimum 1 special symbol (!, ", #, $...)'),
     
     password_confirm: yup
         .string()
-        .oneOf([yup.ref("password"), null], "Пароли должны совпадать")
-        .required("Обязательное поле"),
+        .oneOf([yup.ref("password"), null], "Passwords must match")
+        .required("Please fill in the field!"),
 })
 
 export const loginValidationSchema = yup.object().shape({

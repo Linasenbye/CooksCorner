@@ -7,6 +7,8 @@ import { useDispatch } from 'react-redux';
 import { register } from '../../store/reducers/auth';
 import show from '../../assets/show.svg';
 import hide from '../../assets/hide.svg';
+import email from '../../assets/email.svg';
+import person from '../../assets/person.svg';
 import { signupValidationSchema } from '../../schemas/index';
 import styles from './RegistrationForm.module.css';
 
@@ -58,78 +60,81 @@ const RegistrationForm = () => {
         </div>
     </header>
       <form onSubmit={handleSubmit} autoComplete="off" className={styles.form_wrapper}>
-        <h2 className={styles.heading}>Создать аккаунт Lorby</h2>
         <div className={styles.input_wrapper}>
-          <label htmlFor="email" className={styles.label}>
-            <input
-              value={values.email}
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Введи адрес почты"
-              className={`${styles.login_input} ${errors.email && touched.email ? styles.input_error : ''}`}
-              onChange={handleChange}
-              onBlur={handleBlur}
-            />
-          </label>
-          {errors.email && touched.email && <p className={styles.error}>{errors.email}</p>}
-          <label htmlFor="username" className={styles.label}>
+        <div className={styles.input_input}>
+            <p>Name</p>
+          <label htmlFor="username" className={styles.input_part}>
             <input
               type="text"
               id="username"
               name="username"
               value={values.username}
-              placeholder="Придумай логин"
-              className={`${styles.login_input} ${errors.username && touched.username ? styles.input_error : ''}`}
+              placeholder="Enter your name"
+              className={`${styles.input} ${errors.username && touched.username ? styles.input_error : ''}`}
               onChange={handleChange}
               onBlur={handleBlur}
             />
+             <button className={styles.person_btn} type="button"><img src={person} alt="email" /></button>
           </label>
           {errors.username && touched.username && <p className={styles.error}>{errors.username}</p>}
+          </div>
+          <div className={styles.input_input}>
+            <p>Gmail</p>
+          <label htmlFor="email" className={styles.input_part}>
+            <input
+              value={values.email}
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Enter your Gmail"
+              className={`${styles.input} ${errors.email && touched.email ? styles.input_error : ''}`}
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+            <button className={styles.email_btn} type="button">
+                <img src={email} alt="email" />
+                </button>
+          </label>
+          {errors.email && touched.email && <p className={styles.error}>{errors.email}</p>}
+          </div>
+          <div className={styles.input_input}>
+            <p>Password</p>
           <label htmlFor="password" className={styles.password_input}>
             <input
               type={showPassword ? 'text' : 'password'}
               id="password"
               name="password"
-              placeholder="Пароль (тоже введи)"
-              className={styles.input}
+              placeholder="Enter your Password"
               onChange={handleChange}
               value={values.password}
+              className={`${styles.input} ${
+                errors.password && touched.password ? styles.input_error : ''
+              }`}
               onBlur={handleBlur}
-             
             />
             <button className={styles.showHide_btn} onClick={toggleShowPassword} type="button">
               <img src={showPassword ? hide : show} alt="show or hide password" />
             </button>
           </label>
-          <ul className={styles.form__list}>
-            {passwordValidationMessage(
-              values.password.length >= 8 && values.password.length <= 15,
-              'От 8 до 15 символов'
-            )}
-            {passwordValidationMessage(
-              /[a-z]/.test(values.password) && /[A-Z]/.test(values.password),
-              'Строчные и прописные буквы'
-            )}
-            {passwordValidationMessage(/\d/.test(values.password), 'Минимум 1 цифра')}
-            {passwordValidationMessage(
-              /[^a-zA-Z0-9]/.test(values.password),
-              'Минимум 1 спецсимвол (!, ", #, $...)'
-            )}
-          </ul>
+          {errors.password && touched.password && (
+            <p className={styles.error}>{errors.password}</p>
+          )}
+        </div>
+
+        <div className={styles.input_input}>
+            <p>Re-Password</p>
           <label htmlFor="password_confirm" className={styles.password_input}>
             <input
               type={showConfirmPassword ? 'text' : 'password'}
               id="password_confirm"
               name="password_confirm"
               value={values.password_confirm}
-              placeholder="Повтори пароль"
+              placeholder="Re-Enter your Password"
               className={`${styles.input} ${
                 errors.password_confirm && touched.password_confirm ? styles.input_error : ''
               }`}
               onChange={handleChange}
               onBlur={handleBlur}
-             
             />
             <button className={styles.showHide_btn} onClick={toggleShowConfirmPassword} type="button">
               <img src={showConfirmPassword ? hide : show} alt="show or hide password" />
@@ -139,9 +144,10 @@ const RegistrationForm = () => {
             <p className={styles.error}>{errors.password_confirm}</p>
           )}
         </div>
-        <button disabled={isSubmitting} type="submit" className={styles.login_button}>
-          Далее
-        </button>
+        <button type="submit" className={styles.login_button} disabled={isSubmitting}>Sign In</button>
+        <Link to="/" className={styles.registration_link}><p className={styles.reg_link}>Already have an account? <span className={styles.reg_span}>Sign In Now</span></p></Link>
+
+        </div>
       </form>
     </div>
   );

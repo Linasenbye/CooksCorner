@@ -42,7 +42,9 @@ html, body {
     justify-content: center;
     gap: 48px;
 }
-p{
+
+
+p {
     font-size: 18px;
     line-height: 27px;
     color: #FA9E31;
@@ -74,6 +76,7 @@ p{
     color: #212121;
     font-size: 16px;
 }
+
 .login_button{
     background-color: #FA9E31;
     color: #fff;
@@ -96,12 +99,13 @@ p{
     background-color: #595959;
     color: #f8f8f8;
 }
+
 .showHide_btn, .email_btn{
     background: transparent;
     border: none;
     cursor: pointer;
-
 }
+
 .input_input {
     min-width: 480px;
     margin-bottom: 24px;
@@ -109,6 +113,7 @@ p{
 
 .login_input,
 .password_input{
+    width: 100%;
     height: 56px; 
     padding: 9px 24px;
     border-radius: 42px;
@@ -125,9 +130,12 @@ p{
 
 .input{
     border: none;
-    font-size: 16px;
     outline: none;
     background-color: #EDEDED;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    color: #343434;
 }
 
 .reg_link {
