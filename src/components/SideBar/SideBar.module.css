@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+.link {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background: #EDEDED;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; 
+}
+
+.line {
+    width: 100%;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}

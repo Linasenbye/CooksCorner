@@ -12,9 +12,9 @@ html, body {
     width: 100%;
     height: 300px;
     background-color: #FA9E31;
-    display: flex; /* Add this */
-    justify-content: center; /* Add this */
-    align-items: center; /* Add this */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 .header_name {
     width: 324px;
