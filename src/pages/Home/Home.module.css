@@ -1,0 +1,207 @@
+
+.meal_image {
+    width: 100%;
+    height: 340px;
+    object-fit: cover; 
+    background: lightgray 50% / cover no-repeat, #D9D9D9;
+    flex-shrink: 0;
+    position: relative; 
+}
+
+.button_back {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    fill: var(--Background, #FAFAFA);
+    position: absolute; 
+    top: 32px;
+    left: 180px;
+}
+
+.chosen_meal_info {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    width: 982px;
+    height: 573px;
+    margin: 20px 181px  20px  181px; 
+}
+
+.meal_detailed_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.meal_title {
+    color: var(--Text, #343434);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.meal_author {
+    color: var(--Text-Faded, #666);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.meal_additional_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.text_time {
+    color: var(--Primary, #FA9E31);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.level {
+    display: flex;
+    padding: 4px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: var(--Secondary, #FFF6DE);
+}
+.level_text {
+    color: var(--Text, #343434);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_meal_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.actions_icons {
+    display: flex;
+    width: 982px;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.icons_likes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.likes {
+    color: var(--Text, #343434);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.meal_cooking_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.description_title, .ingredients_title {
+    color: var(--Text, #343434);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.description_text {
+    color: var(--Text, #343434);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+
+}
+
+.ingredients {
+    display: flex;
+    width: 982px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.ingredients_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.meal_ingredient {
+    display: flex;
+    width: 982px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+hr {
+    height: 1px;
+    align-self: stretch;
+    background: var(--Input-Field-Background, #EDEDED);
+}
+
+.meal_ingredient_name {
+    color: var(--Text, #343434);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.meal_ingredient_weight {
+    color: var(--Text-Faded, #666);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

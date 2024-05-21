@@ -1,0 +1,128 @@
+.profile_box {
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile_photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background:  lightgray 50% / cover no-repeat;
+}
+
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile_status_info {
+    display: flex;
+    width: 563px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.profile_popularity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 386px;
+}
+
+.profile_user_inter {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+.profile_numbers {
+    display: flex;
+    height: 55px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile_number {
+    color: var(--Text, #343434);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 116.667% */
+}
+
+.profile_topic {
+    color: var(--Text-Faded, #666);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+.profile_data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.profile_words {
+    display: flex;
+    width: 568px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile_name {
+    color: var(--Text, #343434);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+}
+
+.profile_quote {
+    color: var(--Text-Faded, #666);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; /* 121.429% */
+}
+
+.profile_button {
+    display: flex;
+    width: 480px;
+    height: 56px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: var(--Secondary, #FFF6DE);
+}
+
+.profile_button_text{
+    color: var(--Primary, #FA9E31);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px; /* 106.25% */
+}

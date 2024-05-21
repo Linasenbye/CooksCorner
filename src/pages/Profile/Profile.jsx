@@ -1,11 +1,11 @@
-import React from 'react';
+import ProfileComp from "../../components/ProfileComponent/ProfileComp";
+import styles from "./Profile.module.css";
 
 const Profile = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+    return <>
+       <ProfileComp/>
+    
+    </>
 };
 
 export default Profile;
