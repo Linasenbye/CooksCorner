@@ -145,7 +145,7 @@ const RegistrationForm = () => {
           )}
         </div>
         <button type="submit" className={styles.login_button} disabled={isSubmitting}>Sign In</button>
-        <Link to="/" className={styles.registration_link}><p className={styles.reg_link}>Already have an account? <span className={styles.reg_span}>Sign In Now</span></p></Link>
+        <Link to="/login" className={styles.registration_link}><p className={styles.reg_link}>Already have an account? <span className={styles.reg_span}>Sign In Now</span></p></Link>
 
         </div>
       </form>

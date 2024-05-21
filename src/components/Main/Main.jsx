@@ -1,10 +1,12 @@
 import styles from "./Main.module.css";
-import meal from "../../assets/bca297ef579e6efc869bdd2d06414c28.jpeg";
-import { ReactComponent as Heart } from "../../assets/heart.svg";
-import { ReactComponent as BookMark } from "../../assets/bookmark.svg";
 import MealImage from "../MealImage/MealImage";
 
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 const Main = () => {
+
     return (
         <>
         <h1 className={styles.main_title}>Hi, Sarthak. UI Designer & Cook</h1>

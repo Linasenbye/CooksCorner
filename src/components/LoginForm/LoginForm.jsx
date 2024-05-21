@@ -102,7 +102,7 @@ const LoginForm = () => {
               <div className={styles.error}>{errors.password}</div>
             ) : null}
         <button type="submit" className={styles.login_button} disabled={!isValid ? true : false}>Sign In</button>
-        <Link to="registration" className={styles.registration_link}><p className={styles.reg_link}>I don’t have an account? <span className={styles.reg_span}>Sign Up Now</span></p></Link>
+        <Link to="/registration" className={styles.registration_link}><p className={styles.reg_link}>I don’t have an account? <span className={styles.reg_span}>Sign Up Now</span></p></Link>
       </div>
     </form>
     </>
