@@ -1,3 +1,18 @@
+.profile_main_title {
+    color: var(--Text, #343434);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.profile_page {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
 .profile_box {
     display: inline-flex;
     padding: 10px;
@@ -125,4 +140,58 @@
     font-style: normal;
     font-weight: 500;
     line-height: 17px; /* 106.25% */
+}
+
+.my_recipe {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+
+.my_recipe_options {
+    display: flex;
+    width: 1280px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.my_recipe_name {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.my_recipe_name_name {
+    color: var(--Icon-Faded, #8A8A8A);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+}
+
+.my_recipe_save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.my_recipe_save_save {
+    color: var(--Text, #343434);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+}
+
+.meals_section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
 }

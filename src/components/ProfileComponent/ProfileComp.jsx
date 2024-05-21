@@ -5,7 +5,7 @@ import MealImage from "../MealImage/MealImage";
 
 const ProfileComp = () => {
     return <>
-    <h1>Profile</h1>
+    <h1 className={styles.profile_main_title}>Profile</h1>
 
     <section className={styles.profile_page}>
         <div className={styles.profile_box}>
@@ -45,12 +45,12 @@ const ProfileComp = () => {
     </section>
 
     <section className={styles.my_recipe}>
-        <div className={styles.my_recipe_title}>
+        <div className={styles.my_recipe_options}>
             <div className={styles.my_recipe_name}>
-                <h4>My recipe</h4>
+                <h4 className={styles.my_recipe_name_name}>My recipe</h4>
             </div>
             <div className={styles.my_recipe_save}>
-                <h4>Saved recipe</h4>
+                <h4 className={styles.my_recipe_save_save}>Saved recipe</h4>
             </div>
         </div>
 

@@ -9,7 +9,7 @@ import { ReactComponent as LogoutIcon } from "../../assets/logout.svg";
 import { ReactComponent as ChosenRecipeIcon } from "../../assets/chosen_recipe.svg";
 import { ReactComponent as ChosenHomeIcon } from "../../assets/chosen_home.svg";
 import { ReactComponent as ChosenProfileIcon } from "../../assets/chosen_profile.svg";
-import { ReactComponent as ChosenSearchIcon } from "../../assets/chosen_profile.svg";
+import { ReactComponent as ChosenSearchIcon } from "../../assets/chosen_search.svg";
 import { ReactComponent as ChosenLogoutIcon } from "../../assets/logout.svg";
 import { ReactComponent as LineIcon } from "../../assets/line.svg";
 
