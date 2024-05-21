@@ -10,15 +10,14 @@ import Recipe from "./pages/Recipe/Recipe";
 function App() {
   return (
     <Sidebar>
-    <Routes>
-       <Route path="/login" element={<Login />} />
-       <Route path="/registration" element={<Registration />} />
-       <Route path="/recipe" element={<Recipe />} />
-       <Route path="/home" element={<Home />} />
-       <Route path="/seach" element={<Search />} />
-       <Route path="/profile" element={<Profile />} />
-       
-    </Routes>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/recipe" element={<Recipe />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
     </Sidebar>
 
      

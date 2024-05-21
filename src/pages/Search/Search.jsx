@@ -1,11 +1,12 @@
-import React from 'react';
+import SearchComp from "../../components/SearchComponent/SearchComp";
 
 const Search = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+
+    return <>
+  
+        <SearchComp/>
+   
+     </>
 };
 
 export default Search;

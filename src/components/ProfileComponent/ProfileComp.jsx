@@ -1,9 +1,11 @@
-
 import styles from "./ProfileComp.module.css";
 import profile_photo from "../../assets/d307d6a0d8c04215255375826bda969c.png"
 import MealImage from "../MealImage/MealImage";
 
+
+
 const ProfileComp = () => {
+
     return <>
     <h1 className={styles.profile_main_title}>Profile</h1>
 

@@ -20,7 +20,7 @@ const Sidebar = ({ children }) => {
         { path: "/recipe", icon: location.pathname === "/recipe" ? ChosenRecipeIcon : RecipeIcon },
         { icon: LineIcon },
         { path: "/home", icon: location.pathname === "/home" ? ChosenHomeIcon : HomeIcon },
-        { path: "/Search", icon: location.pathname === "/Search" ? ChosenSearchIcon : SearchIcon },
+        { path: "/search", icon: location.pathname === "/search" ? ChosenSearchIcon : SearchIcon },
         { path: "/profile", icon: location.pathname === "/profile" ? ChosenProfileIcon : ProfileIcon }
         
     ];
