@@ -23,10 +23,11 @@ const Sidebar = ({ children }) => {
         { path: "/search", icon: location.pathname === "/search" ? ChosenSearchIcon : SearchIcon },
         { path: "/profile", icon: location.pathname === "/profile" ? ChosenProfileIcon : ProfileIcon }
         
+        
     ];
 
     const logoutItems = [
-        { path: "/logout", icon: LogoutIcon }
+        { path: "/login", icon: LogoutIcon }
     ];
 
     return (

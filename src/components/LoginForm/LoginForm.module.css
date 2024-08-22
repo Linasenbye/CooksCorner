@@ -9,7 +9,6 @@ html, body {
 
 
 .header_login {
-    width: 100%;
     height: 300px;
     background-color: #FA9E31;
     display: flex; 
